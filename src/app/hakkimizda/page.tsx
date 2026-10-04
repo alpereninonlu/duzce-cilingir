@@ -3,11 +3,11 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import JsonLd, { buildBreadcrumbJsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Hakkımızda | Düzce Çilingir",
+  title: "Hakkımızda | Düzce Çilingirci",
   description:
-    "Düzce'de yıllardır güvenilir çilingir hizmeti sunan profesyonel ekibimizi tanıyın. 7/24 hızlı ve güvenilir çilingir.",
+    "Düzce Merkez ve tüm ilçelerinde 7/24 profesyonel çilingir. Kale, Yuma, Hok, Daf bayisi. 5 dakikada hızlı servis.",
   alternates: {
-    canonical: "https://www.duzcecilingirci.com/hakkimizda",
+    canonical: "https://duzcecilingirci.com/hakkimizda",
   },
 };
 
@@ -56,21 +56,27 @@ export default function HakkimizdaPage() {
           <div className="max-w-3xl mx-auto">
             <div className="prose prose-gray max-w-none text-gray-600 leading-relaxed space-y-4">
               <p>
-                <strong className="text-gray-900">Düzce Çilingir</strong> olarak
-                yıllardır Düzce ve çevresinde profesyonel çilingir hizmeti
-                sunuyoruz. Müşterilerimizin güvenliğini ve memnuniyetini ön
-                planda tutarak, 7 gün 24 saat kesintisiz hizmet veriyoruz.
+                <strong className="text-gray-900">Düzce Çilingirci</strong> olarak
+                yıllardır Düzce Merkez ve tüm ilçelerine profesyonel ekibimizle <strong>7 gün 24 saat</strong> kesintisiz
+                çilingir hizmeti vermekteyiz. Müşterilerimizin güvenliğini en üst düzeyde
+                tutmak amacıyla her zaman kalite standartlarımızı en yukarıda tutuyoruz.
               </p>
               <p>
-                Deneyimli ve uzman ekibimiz, en son teknoloji ekipmanlarla
-                donatılmış olup, kapı açma, kilit değiştirme, oto çilingir ve
-                kasa açma gibi tüm çilingir hizmetlerini hasarsız bir şekilde
-                gerçekleştirmektedir.
+                Sektörün en güvenilir markalarının güvencesini kapınıza getiriyoruz.{" "}
+                <strong>Kale, Yuma, Hok, Daf, Ymk ve Altın Kilit</strong> gibi öncü
+                markaların bayiliklerini bünyemizde bulundurarak, ihtiyacınıza en uygun ve en
+                güvenli kilit sistemlerini orijinal ürün garantisiyle sunuyoruz.
+              </p>
+              <p>
+                Kapıda kalmanın ne kadar stresli bir durum olduğunun farkındayız. Bu nedenle
+                acil kapı açma ve kilit değişimi hizmetlerinde iddialıyız;{" "}
+                <strong>sadece 5 dakika içerisinde</strong> adresinize ulaşıyor ve profesyonel
+                ekipmanlarımızla kapınıza zarar vermeden sorunu çözüyoruz.
               </p>
               <p>
                 Düzce Merkez başta olmak üzere Akçakoca, Gölyaka, Çilimli,
-                Cumayeri, Gümüşova, Kaynaşlı, Beyköy ve Yığılca ilçelerine
-                hizmet vermekteyiz.
+                Cumayeri, Gümüşova, Kaynaşlı, Beyköy ve Yığılca&apos;da güvenilir çilingir
+                aradığınız her an bir telefon kadar uzağınızdayız.
               </p>
             </div>
           </div>

@@ -2,9 +2,12 @@ import { contactInfo } from "@/data/contact";
 import { getPhoneUrl, getWhatsAppUrl } from "@/lib/utils";
 
 export default function MobileBottomBar() {
+  // Yol Tarifi sadece gerçek Google İşletme Profili linki girildiğinde görünür
+  const showDirections = Boolean(contactInfo.googleMapsPlaceUrl);
+
   return (
     <div className="mobile-bottom-bar fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white/95 backdrop-blur-sm border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.1)]">
-      <div className="grid grid-cols-3">
+      <div className={`grid ${showDirections ? "grid-cols-3" : "grid-cols-2"}`}>
         {/* Hemen Ara */}
         <a
           href={getPhoneUrl(contactInfo.phone)}
@@ -24,7 +27,7 @@ export default function MobileBottomBar() {
           href={getWhatsAppUrl(contactInfo.whatsapp, contactInfo.whatsappMessage)}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center justify-center gap-1 py-3 active:bg-green-50 transition-colors border-x border-gray-100"
+          className={`flex flex-col items-center justify-center gap-1 py-3 active:bg-green-50 transition-colors ${showDirections ? "border-x" : "border-l"} border-gray-100`}
           aria-label="WhatsApp"
         >
           <span className="flex items-center justify-center w-9 h-9 rounded-full bg-green-100 text-[#25d366]">
@@ -36,8 +39,9 @@ export default function MobileBottomBar() {
         </a>
 
         {/* Yol Tarifi */}
+        {showDirections && (
         <a
-          href={contactInfo.googleMapsDirectionUrl}
+          href={contactInfo.googleMapsPlaceUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center gap-1 py-3 active:bg-red-50 transition-colors"
@@ -51,6 +55,7 @@ export default function MobileBottomBar() {
           </span>
           <span className="text-[11px] font-bold text-red-600">Yol Tarifi</span>
         </a>
+        )}
       </div>
     </div>
   );

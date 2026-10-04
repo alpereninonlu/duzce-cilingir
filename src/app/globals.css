@@ -30,7 +30,7 @@
   --color-gray-900: #111827;
 
   /* Font */
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
 
   /* Container genişlikleri */
   --breakpoint-sm: 640px;

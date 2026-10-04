@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // İleride static export istenirse:
-  // output: "export",
+  output: "export",
   images: {
     formats: ["image/avif", "image/webp"],
   },

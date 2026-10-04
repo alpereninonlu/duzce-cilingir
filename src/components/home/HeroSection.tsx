@@ -19,14 +19,17 @@ export default function HeroSection() {
           </div>
 
           <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-            Düzce&apos;de Güvenilir{" "}
-            <span className="text-primary-300">Çilingir</span> Hizmeti
+            Düzce Çilingirci{" "}
+            <span className="block text-primary-300 text-xl sm:text-3xl md:text-4xl lg:text-5xl mt-2">
+              7/24 Acil Çilingir Hizmeti
+            </span>
           </h1>
 
           <p className="mt-3 sm:mt-5 text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed">
-            Kapınız kilitli mi kaldı? Profesyonel ekibimiz Düzce genelinde{" "}
-            <strong className="text-white">15 dakikada</strong> kapınızda.
-            Hasarsız kapı açma, kilit değiştirme ve oto çilingir hizmetleri.
+            Düzce Merkez ve çevresinde 7/24 kapı açma, kilit değiştirme, oto
+            çilingir ve anahtar hizmetleri. Düzce Merkez&apos;de ortalama{" "}
+            <strong className="text-white">15-20 dakikada</strong> adresinizdeyiz.
+            Hızlı ve profesyonel destek için hemen bize ulaşın.
           </p>
 
           {/* CTA Butonları */}
@@ -60,15 +63,15 @@ export default function HeroSection() {
           <div className="mt-8 sm:mt-10 grid grid-cols-3 gap-3 sm:flex sm:flex-wrap sm:gap-6 text-sm text-gray-400">
             <div className="flex flex-col sm:flex-row items-center sm:items-center gap-1 sm:gap-2 text-center sm:text-left">
               <span className="text-xl sm:text-base">⚡</span>
-              <span className="text-xs sm:text-sm">15 dk. Hızlı Varış</span>
+              <span className="text-xs sm:text-sm">Merkez&apos;de ort. 15-20 dk</span>
             </div>
             <div className="flex flex-col sm:flex-row items-center sm:items-center gap-1 sm:gap-2 text-center sm:text-left">
               <span className="text-xl sm:text-base">🛡️</span>
-              <span className="text-xs sm:text-sm">Hasarsız Açma</span>
+              <span className="text-xs sm:text-sm">Uygun durumlarda hasarsız açma</span>
             </div>
             <div className="flex flex-col sm:flex-row items-center sm:items-center gap-1 sm:gap-2 text-center sm:text-left">
               <span className="text-xl sm:text-base">💰</span>
-              <span className="text-xs sm:text-sm">Uygun Fiyat</span>
+              <span className="text-xs sm:text-sm">Şeffaf fiyatlandırma</span>
             </div>
           </div>
         </div>

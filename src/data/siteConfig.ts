@@ -1,12 +1,11 @@
 import type { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
-  siteName: "Düzce Çilingir",
-  siteTitle: "Düzce Çilingir | 7/24 Acil Çilingir Hizmeti",
+  siteName: "Düzce Çilingirci",
+  siteTitle: "Düzce Çilingirci | 7/24 Acil Çilingir ve Oto Çilingir",
   siteDescription:
-    "Düzce'de 7/24 profesyonel çilingir hizmeti. Kapı açma, kilit değiştirme, oto çilingir, kasa açma. Hızlı, güvenilir ve uygun fiyatlı çilingir.",
-  siteUrl: "https://www.duzcecilingirci.com",
+    "Düzce Çilingirci; Düzce Merkez ve çevresinde 7/24 kapı açma, kilit değiştirme, oto çilingir ve anahtar hizmetleri sunar. Hemen ulaşın.",
+  // Tek ve kalıcı adres: www'suz + https
+  siteUrl: "https://duzcecilingirci.com",
   locale: "tr_TR",
-  ogImage: "/og-image.jpg",
-  twitterHandle: "",
 };

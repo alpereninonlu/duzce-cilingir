@@ -27,10 +27,10 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-14 sm:h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl sm:text-2xl">🔑</span>
+          <Link href="/" className="flex items-center gap-2" aria-label="Düzce Çilingirci - Ana Sayfa">
+            <span className="text-xl sm:text-2xl" aria-hidden="true">🔑</span>
             <span className="text-base sm:text-lg font-bold text-primary-700">
-              Düzce Çilingir
+              Düzce Çilingirci
             </span>
           </Link>
 

@@ -9,7 +9,8 @@ import JsonLd from "@/components/seo/JsonLd";
 import { siteConfig } from "@/data/siteConfig";
 
 const inter = Inter({
-  subsets: ["latin"],
+  // latin-ext: ğ, ş, ı, İ gibi Türkçe karakterler için gerekli
+  subsets: ["latin", "latin-ext"],
   display: "swap",
   variable: "--font-inter",
 });
@@ -21,10 +22,10 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.siteName}`,
   },
   description: siteConfig.siteDescription,
+  applicationName: siteConfig.siteName,
   openGraph: {
     type: "website",
     locale: siteConfig.locale,
-    url: siteConfig.siteUrl,
     siteName: siteConfig.siteName,
     title: siteConfig.siteTitle,
     description: siteConfig.siteDescription,
@@ -34,9 +35,8 @@ export const metadata: Metadata = {
     title: siteConfig.siteTitle,
     description: siteConfig.siteDescription,
   },
-  alternates: {
-    canonical: siteConfig.siteUrl,
-  },
+  // Canonical her sayfada kendi URL'si ile ayrıca tanımlanır (lib/seo.ts)
+  formatDetection: { telephone: false },
   robots: {
     index: true,
     follow: true,

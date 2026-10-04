@@ -1,5 +1,5 @@
 // =============================================
-// Düzce Çilingir — TypeScript Tip Tanımlamaları
+// Düzce Çilingirci — TypeScript Tip Tanımlamaları
 // =============================================
 
 export interface ContactInfo {
@@ -9,10 +9,17 @@ export interface ContactInfo {
   whatsappMessage: string;
   email: string;
   address: string;
+  streetAddress: string;
+  neighborhood: string;
   city: string;
   district: string;
+  postalCode: string;
+  /** Google İşletme Profili linki (Maps "Paylaş" linki). Boşsa Yol Tarifi butonu gizlenir. */
+  googleMapsPlaceUrl: string;
+  /** Google yorum yazma linki. Boşsa "Google'da bizi değerlendirin" butonu gizlenir. */
+  googleReviewUrl: string;
+  /** Google Maps "Haritayı yerleştir" iframe src değeri. Boşsa adres ile harita gösterilir. */
   googleMapsEmbedUrl: string;
-  googleMapsDirectionUrl: string;
   workingHours: WorkingHours;
 }
 
@@ -23,21 +30,31 @@ export interface WorkingHours {
   note: string;
 }
 
-export interface Service {
-  id: string;
-  title: string;
-  description: string;
-  icon: string;
-  slug: string;
+export interface ServiceSection {
+  heading: string;
+  paragraphs?: string[];
+  list?: string[];
 }
 
-export interface Testimonial {
+export interface Service {
   id: string;
-  name: string;
-  comment: string;
-  rating: number;
-  date: string;
-  location: string;
+  slug: string;
+  title: string;
+  /** Kartlarda görünen kısa açıklama */
+  description: string;
+  icon: string;
+  /** Detay sayfası H1 */
+  h1: string;
+  /** <title> (marka şablonla eklenir) */
+  metaTitle: string;
+  metaDescription: string;
+  intro: string[];
+  sections: ServiceSection[];
+  faqs: { question: string; answer: string }[];
+  /** İlgili blog yazılarının slug'ları */
+  relatedPosts: string[];
+  /** /public/images altındaki görsel dosyası (varsa otomatik gösterilir) */
+  image: { file: string; alt: string };
 }
 
 export interface Region {
@@ -70,8 +87,6 @@ export interface SiteConfig {
   siteDescription: string;
   siteUrl: string;
   locale: string;
-  ogImage: string;
-  twitterHandle: string;
 }
 
 export interface NavLink {

@@ -13,18 +13,22 @@ export default function ServicesPreview() {
 
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {services.map((service) => (
-            <div
+            <Link
               key={service.id}
+              href={`/hizmetler/${service.slug}`}
               className="group rounded-xl border border-gray-200 bg-white p-4 sm:p-6 hover:border-primary-200 hover:shadow-md transition-all duration-200"
             >
-              <span className="text-2xl sm:text-3xl block mb-2 sm:mb-4">{service.icon}</span>
+              <span className="text-2xl sm:text-3xl block mb-2 sm:mb-4" aria-hidden="true">{service.icon}</span>
               <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2 group-hover:text-primary-700 transition-colors">
                 {service.title}
               </h3>
               <p className="text-xs sm:text-sm text-gray-500 leading-relaxed hidden sm:block">
                 {service.description}
               </p>
-            </div>
+              <span className="mt-2 sm:mt-3 inline-block text-xs sm:text-sm font-semibold text-primary-600 group-hover:text-primary-800">
+                Detaylar →
+              </span>
+            </Link>
           ))}
         </div>
 

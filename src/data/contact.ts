@@ -1,18 +1,29 @@
 import type { ContactInfo } from "@/types";
 
+/**
+ * İşletmenin tek doğruluk kaynağı (NAP: Name, Address, Phone).
+ * Google İşletme Profili'ndeki bilgilerle birebir aynı tutulmalıdır.
+ */
 export const contactInfo: ContactInfo = {
   phone: "+905468816007",
   phoneDisplay: "0546 881 60 07",
   whatsapp: "905468816007",
   whatsappMessage: "Merhaba, çilingir hizmeti hakkında bilgi almak istiyorum.",
-  email: "info@duzcecilingirci.com",
-  address: "Cedidiye Mah. Ankara Cad. No:12/A, Merkez/Düzce",
+  email: "altunsoyanahtar@gmail.com",
+  address: "Burhaniye Mah. Bolu Cad. No:17, Merkez/Düzce",
+  streetAddress: "Burhaniye Mah. Bolu Cad. No:17",
+  neighborhood: "Burhaniye",
   city: "Düzce",
   district: "Merkez",
-  googleMapsEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24176.635234!2d31.1565!3d40.8439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409ca60d0e638f53%3A0x6f3a5c0c9b5f4c1a!2zRMO8emNl!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str",
-  googleMapsDirectionUrl:
-    "https://www.google.com/maps/dir/?api=1&destination=40.8439,31.1565",
+  // Doğru posta kodunu biliyorsanız yazın (Google profilindekiyle aynı olmalı)
+  postalCode: "",
+  // Google İşletme Profili hazır olduğunda doldurun:
+  // Maps'te işletmeyi açın → Paylaş → linki kopyalayın (örn. https://maps.app.goo.gl/xxxx)
+  googleMapsPlaceUrl: "",
+  // İşletme Profili → "Yorum iste" → linki kopyalayın (örn. https://g.page/r/xxxx/review)
+  googleReviewUrl: "",
+  // Maps → Paylaş → Haritayı yerleştir → iframe içindeki src değeri
+  googleMapsEmbedUrl: "",
   workingHours: {
     weekdays: "7/24 Açık",
     saturday: "7/24 Açık",
@@ -20,3 +31,8 @@ export const contactInfo: ContactInfo = {
     note: "Acil durumlarda 7 gün 24 saat hizmetinizdeyiz.",
   },
 };
+
+/** Adres tabanlı harita (Google profili linki gelene kadar) */
+export const addressMapEmbedUrl = `https://maps.google.com/maps?q=${encodeURIComponent(
+  `${contactInfo.streetAddress}, ${contactInfo.district}, ${contactInfo.city}`
+)}&z=16&output=embed`;
