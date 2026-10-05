@@ -17,7 +17,7 @@ export const faqs: FAQ[] = [
     id: "3",
     question: "Çilingir ne kadar sürede gelir?",
     answer:
-      "Düzce Merkez'de ortalama 15-20 dakikada adresinize ulaşıyoruz. Diğer ilçelerde süre mesafeye göre değişir; aradığınızda tahmini süreyi söyleriz.",
+      "Düzce Merkez'de ortalama 5-10 dakikada adresinize ulaşıyoruz. Diğer ilçelerde süre mesafeye göre değişir; aradığınızda tahmini süreyi söyleriz.",
   },
   {
     id: "4",

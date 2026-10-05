@@ -15,11 +15,11 @@ export const services: Service[] = [
     h1: "Düzce Kapı Açma Hizmeti",
     metaTitle: "Düzce Kapı Açma – 7/24 Acil Çilingir",
     metaDescription:
-      "Düzce'de 7/24 kapı açma: anahtar içeride kaldıysa, kaybolduysa veya kilit arızalandıysa arayın. Merkez'de ortalama 15-20 dakikada adresinizdeyiz.",
+      "Düzce'de 7/24 kapı açma: anahtar içeride kaldıysa, kaybolduysa veya kilit arızalandıysa arayın. Merkez'de ortalama 5-10 dakikada adresinizdeyiz.",
     image: { file: "kapi-acma.webp", alt: "Düzce Çilingirci ustasının daire kapısını açarken çekilmiş fotoğrafı" },
     intro: [
       "Kapının önünde kalmak, özellikle gece saatlerinde ya da yanınızda çocuk varken can sıkıcı bir durumdur. Düzce Çilingirci olarak Düzce Merkez ve çevresinde ev, daire ve iş yeri kapıları için 7 gün 24 saat kapı açma hizmeti veriyoruz.",
-      "Düzce Merkez'de ortalama 15-20 dakika içinde adresinize ulaşıyoruz. Merkez dışındaki ilçelerde süre mesafeye ve trafiğe göre değişir; aradığınızda tahmini varış süresini size açıkça söyleriz.",
+      "Düzce Merkez'de ortalama 5-10 dakika içinde adresinize ulaşıyoruz. Merkez dışındaki ilçelerde süre mesafeye ve trafiğe göre değişir; aradığınızda tahmini varış süresini size açıkça söyleriz.",
     ],
     sections: [
       {
@@ -74,7 +74,7 @@ export const services: Service[] = [
       {
         question: "Ne kadar sürede gelirsiniz?",
         answer:
-          "Düzce Merkez'de ortalama 15-20 dakikada adresinizdeyiz. Diğer ilçelerde süre mesafeye göre değişir; aradığınızda tahmini süreyi söyleriz.",
+          "Düzce Merkez'de ortalama 5-10 dakikada adresinizdeyiz. Diğer ilçelerde süre mesafeye göre değişir; aradığınızda tahmini süreyi söyleriz.",
       },
     ],
     relatedPosts: [
@@ -201,7 +201,7 @@ export const services: Service[] = [
       {
         heading: "Hizmet bölgesi ve süre",
         paragraphs: [
-          "Düzce Merkez'de ortalama 15-20 dakikada aracınızın yanındayız. Akçakoca, Gölyaka, Çilimli, Cumayeri, Gümüşova, Kaynaşlı, Beyköy ve Yığılca için de hizmet veriyoruz; bu bölgelerde varış süresi mesafeye göre değişir.",
+          "Düzce Merkez'de ortalama 5-10 dakikada aracınızın yanındayız. Akçakoca, Gölyaka, Çilimli, Cumayeri, Gümüşova, Kaynaşlı, Beyköy ve Yığılca için de hizmet veriyoruz; bu bölgelerde varış süresi mesafeye göre değişir.",
         ],
       },
     ],

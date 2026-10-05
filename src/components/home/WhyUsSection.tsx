@@ -16,8 +16,8 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
       </svg>
     ),
-    title: "Merkez'de 15-20 Dakika",
-    description: "Düzce Merkez'de ortalama 15-20 dakikada adresinize ulaşıyoruz.",
+    title: "Merkez'de 5-10 Dakika",
+    description: "Düzce Merkez'de ortalama 5-10 dakikada adresinize ulaşıyoruz.",
   },
   {
     icon: (

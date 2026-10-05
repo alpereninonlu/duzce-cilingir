@@ -5,6 +5,7 @@ import WhyUsSection from "@/components/home/WhyUsSection";
 import FAQSection from "@/components/home/FAQSection";
 import CTASection from "@/components/home/CTASection";
 import GoogleReviewSection from "@/components/home/GoogleReviewSection";
+import TestimonialsSection from "@/components/home/TestimonialsSection";
 import JsonLd, { buildFaqJsonLd } from "@/components/seo/JsonLd";
 import { faqs } from "@/data/faq";
 import { siteConfig } from "@/data/siteConfig";
@@ -24,6 +25,7 @@ export default function HomePage() {
       <HeroSection />
       <ServicesPreview />
       <WhyUsSection />
+      <TestimonialsSection />
       <GoogleReviewSection />
       <FAQSection />
       <CTASection />

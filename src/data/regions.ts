@@ -9,7 +9,7 @@ export const regions: Region[] = [
     id: "merkez",
     name: "Düzce Merkez",
     description:
-      "Dükkânımız Burhaniye Mahallesi, Bolu Caddesi'nde. Düzce Merkez'in mahallelerinde kapı açma, kilit değiştirme, çelik kapı kilidi ve oto çilingir hizmetlerini 7/24 veriyoruz; ortalama 15-20 dakikada adresinizdeyiz. Anahtar kopyalama için dükkânımıza uğrayabilirsiniz.",
+      "Dükkânımız Burhaniye Mahallesi, Bolu Caddesi'nde. Düzce Merkez'in mahallelerinde kapı açma, kilit değiştirme, çelik kapı kilidi ve oto çilingir hizmetlerini 7/24 veriyoruz; ortalama 5-10 dakikada adresinizdeyiz. Anahtar kopyalama için dükkânımıza uğrayabilirsiniz.",
     slug: "duzce-merkez",
   },
   {

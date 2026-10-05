@@ -28,7 +28,7 @@ export default function HeroSection() {
           <p className="mt-3 sm:mt-5 text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed">
             Düzce Merkez ve çevresinde 7/24 kapı açma, kilit değiştirme, oto
             çilingir ve anahtar hizmetleri. Düzce Merkez&apos;de ortalama{" "}
-            <strong className="text-white">15-20 dakikada</strong> adresinizdeyiz.
+            <strong className="text-white">5-10 dakikada</strong> adresinizdeyiz.
             Hızlı ve profesyonel destek için hemen bize ulaşın.
           </p>
 
@@ -63,7 +63,7 @@ export default function HeroSection() {
           <div className="mt-8 sm:mt-10 grid grid-cols-3 gap-3 sm:flex sm:flex-wrap sm:gap-6 text-sm text-gray-400">
             <div className="flex flex-col sm:flex-row items-center sm:items-center gap-1 sm:gap-2 text-center sm:text-left">
               <span className="text-xl sm:text-base">⚡</span>
-              <span className="text-xs sm:text-sm">Merkez&apos;de ort. 15-20 dk</span>
+              <span className="text-xs sm:text-sm">Merkez&apos;de ort. 5-10 dk</span>
             </div>
             <div className="flex flex-col sm:flex-row items-center sm:items-center gap-1 sm:gap-2 text-center sm:text-left">
               <span className="text-xl sm:text-base">🛡️</span>
